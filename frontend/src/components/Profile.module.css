@@ -1,0 +1,189 @@
+/* Global */
+:root {
+    --primary-color: #FF5722;
+    /* Vibrant Orange */
+    --secondary-color: #3B3F47;
+    /* Dark Gray */
+    --accent-color: #00C4B4;
+    /* Teal */
+    --background-color: #F8F8F8;
+    /* Very Light Gray */
+    --text-color: #333333;
+    /* Dark Gray for text */
+    --success-color: #28A745;
+    /* Green */
+    --error-color: #DC3545;
+    /* Red */
+    --hover-color: #FF7043;
+    /* Light Orange */
+    --card-background: #FFFFFF;
+    /* White for cards */
+}
+
+/* Profile Container */
+.profileContainer {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: var(--card-background);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.profileHeader {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profileTitle {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 8px;
+}
+
+.profileSubtitle {
+    font-size: 18px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+/* User Info Section */
+.userInfo {
+    margin-top: 30px;
+}
+
+.userInfoSection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.userLabel {
+    font-weight: bold;
+    color: var(--secondary-color);
+    font-size: 16px;
+}
+
+.userValue {
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Password Section */
+.passwordSection {
+    margin-top: 30px;
+}
+
+.sectionTitle {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.passwordWrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.passwordInput {
+    flex-grow: 1;
+    padding: 12px;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    color: var(--text-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+.passwordInput:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.toggleButton {
+    padding: 8px 14px;
+    font-size: 16px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggleButton:hover {
+    background-color: var(--hover-color);
+}
+
+/* Logout Section */
+.logoutSection {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.logoutButton {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: var(--error-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logoutButton:hover {
+    background-color: #C82333;
+}
+
+/* Error and Success Messages */
+.errorMessage {
+    color: var(--error-color);
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(220, 53, 69, 0.1);
+    border-radius: 8px;
+}
+
+.successMessage {
+    color: var(--success-color);
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(40, 167, 69, 0.1);
+    border-radius: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .profileContainer {
+        padding: 20px;
+    }
+
+    .profileTitle {
+        font-size: 24px;
+    }
+
+    .profileSubtitle {
+        font-size: 16px;
+    }
+
+    .passwordInput {
+        font-size: 16px;
+    }
+
+    .logoutButton {
+        font-size: 16px;
+    }
+}

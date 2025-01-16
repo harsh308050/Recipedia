@@ -1,0 +1,148 @@
+/* Recipe Detail Page Styles */
+.recipeDetail {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  max-width: 900px;
+  margin: 3rem auto;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.recipeDetail h2 {
+  font-size: 2.2rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.recipeImage {
+  width: 100%;
+  height: auto;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.author {
+  text-align: center;
+  font-size: 1rem;
+  color: #888;
+  margin-top: 0.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.recipeInfo {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.infoItem {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.label {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.ingredients {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+.ingredients li {
+  background-color: #fff;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+.ingredients li:hover {
+  background-color: #f0f8ff;
+}
+
+.instructions {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+.saveButton {
+  display: block;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  margin-top: 2.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: none;
+  outline: none;
+}
+
+.saveButton:hover {
+  background-color: #ff6b6b;
+  transform: scale(1.05);
+}
+
+.loading,
+.error {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.error {
+  color: #f44336;
+}
+
+.loading {
+  color: #757575;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .recipeDetail {
+    padding: 1.5rem;
+  }
+
+  .recipeDetail h2 {
+    font-size: 2rem;
+  }
+
+  .recipeInfo {
+    font-size: 1rem;
+  }
+
+  .infoItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .saveButton {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .ingredients li {
+    font-size: 0.9rem;
+  }
+}

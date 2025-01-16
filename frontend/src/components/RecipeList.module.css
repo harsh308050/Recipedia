@@ -1,0 +1,108 @@
+.recipeList {
+  padding: 3rem;
+  background-color: var(--background-color);
+  /* Light background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recipeList h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  /* Deep blue for titles */
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.recipeGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.recipeCard {
+  background-color: var(--card-background);
+  /* White card */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 320px;
+}
+
+.recipeCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.recipeImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 3px solid var(--secondary-color);
+  /* Soft line for separation */
+}
+
+.recipeInfo {
+  padding: 1.5rem;
+}
+
+.recipeInfo h3 {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  /* Deep blue for headings */
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.recipeInfo p {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.viewButton {
+  display: inline-block;
+  background-color: #ff7043;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.viewButton:hover {
+  color: #e65c3c;
+  background-color: white;
+  border: solid 2px #e63946;
+
+  /* Darker coral for hover */
+}
+
+.loading,
+.error {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.error {
+  color: #e63946;
+  /* Red for error messages */
+}
+
+.loading {
+  color: var(--secondary-color);
+  /* Light grey for loading text */
+}

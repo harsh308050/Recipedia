@@ -1,0 +1,150 @@
+:root {
+  --primary-color: #312F2F;
+  /* Bright Orange */
+  --secondary-color: #3B3F47;
+  /* Dark Gray */
+  --accent-color: #e29f53;
+  /* Teal */
+  --background-color: #F8F8F8;
+  /* Very Light Gray */
+  --text-color: #333333;
+  /* Dark Gray for text */
+  --hover-color: #FF7043;
+  /* Lighter Orange for hover states */
+  --card-background: #FFFFFF;
+  /* White for cards */
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+button {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: var(--hover-color);
+  /* Light Orange for hover */
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 87, 34, 0.5);
+  /* Focus state */
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #E0E0E0;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  color: var(--accent-color);
+  /* Teal on hover */
+}
+
+.card {
+  background-color: var(--card-background);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  padding: 1rem 0;
+}
+
+.navbar .logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 1.5rem;
+}
+
+.navbar a:hover {
+  opacity: 0.8;
+}
+
+.footer {
+  background-color: var(--card-background);
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer a {
+  color: var(--secondary-color);
+  margin: 0 1rem;
+}
+
+.footer a:hover {
+  color: var(--accent-color);
+  /* Teal color on hover */
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar a {
+    margin: 1rem 0;
+  }
+}
