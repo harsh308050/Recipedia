@@ -77,11 +77,21 @@ Recipedia/
 ```
 
 ## Screenshots
+![landing](https://github.com/user-attachments/assets/e64a06b0-850f-4dc4-840c-c9bc8f2126e4)
 
+![collection](https://github.com/user-attachments/assets/ede9f53f-67da-4ab6-98f9-f8fb482989b6)
 
+![log](https://github.com/user-attachments/assets/3efd8f5b-3a11-494b-803d-b5d93b9ecb8c)
 
+![reg](https://github.com/user-attachments/assets/28323d5b-4bc4-4653-a29f-6e1c182ab262)
 
+![profile](https://github.com/user-attachments/assets/212d3381-8dfd-447c-8122-f409853ec606)
 
+![saved](https://github.com/user-attachments/assets/9fdefb92-bf8e-43e9-8ce0-ae0f66c138b6)
+
+![creat](https://github.com/user-attachments/assets/7384dbf8-52a0-4120-8d20-d48e5a060ce0)
+
+![view](https://github.com/user-attachments/assets/9f77e58d-99b2-488e-88d8-78cb357e6e1e)
 
 ## Contributing
 Contributions are welcome! Feel free to submit a pull request or open an issue.
